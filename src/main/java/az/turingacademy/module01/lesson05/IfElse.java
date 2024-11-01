@@ -7,7 +7,7 @@ public class IfElse {
         //input
         Scanner scanner = new Scanner(System.in);
         int value = scanner.nextInt();
-        String result = "";
+        String result = "" ;
 
         //proses
         if(value%3==0){
