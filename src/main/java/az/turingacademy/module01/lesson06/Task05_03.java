@@ -1,4 +1,4 @@
-package az.turingacademy.module02;
+package az.turingacademy.module01.lesson06;
 
 public class Task05_03 {
     public static void main(String[] args) {
