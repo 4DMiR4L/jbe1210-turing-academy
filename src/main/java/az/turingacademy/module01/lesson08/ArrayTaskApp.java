@@ -11,7 +11,7 @@ public class ArrayTaskApp {
         int n = scanner.nextInt();
         int[][] array = new int[n][];
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i < n; i++) {
             array[i - 1] = new int[i];
             for (int j = 0; j < i; j++) {
                 array[i - 1][j] = i;
