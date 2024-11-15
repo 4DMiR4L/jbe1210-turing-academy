@@ -59,6 +59,7 @@ public class NumberGameApp {
                 break;
             }
         }
+
         scanner.close();
     }
 }
