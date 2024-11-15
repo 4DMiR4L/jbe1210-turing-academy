@@ -26,7 +26,6 @@ public class ShootingSquareApp {
             printField(field);
 
             int firerow = getValidInput(scanner, "Enter a row(1-5):") - 1;
-
             int firecol = getValidInput(scanner, "Enter a cloum(1-5):") - 1;
 
             if (field[firerow][firecol] == '*') {

@@ -30,7 +30,6 @@ public class WeekPlanApp {
         while (sc.hasNextLine()) {
             String input = sc.nextLine().trim().toLowerCase();
 
-
             boolean validDay = false;
             for (int i = 0; i < schedule.length; i++) {
                 if (schedule[i][0].equalsIgnoreCase(input)) {
@@ -39,8 +38,6 @@ public class WeekPlanApp {
                     break;
                 }
             }
-
-
             if (!validDay) {
                 System.out.println("Sorry, I don't understand you, please try again.");
             }
