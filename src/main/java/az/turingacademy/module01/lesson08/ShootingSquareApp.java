@@ -41,36 +41,37 @@ public class ShootingSquareApp {
             }
         }
         scanner.close();
-        }
+    }
 
-        public static void printField ( char[][] field){
-            System.out.println("  1   2   3   4   5");
-            for (int i = 0; i < 5; i++) {
-                System.out.print((i + 1) + " ");
-                for (int j = 0; j < 5; j++) {
-                    System.out.print(field[i][j] + "   ");
-                }
-                System.out.println();
+    public static void printField(char[][] field) {
+        System.out.println("  1   2   3   4   5");
+        for (int i = 0; i < 5; i++) {
+            System.out.print((i + 1) + " ");
+            for (int j = 0; j < 5; j++) {
+                System.out.print(field[i][j] + "   ");
             }
+            System.out.println();
         }
-        public static int getValidInput (Scanner scanner, String prompt){
-            int input = 0;
-            while (true) {
-                System.out.print(prompt);
-                if (scanner.hasNextInt()) {
-                    input = scanner.nextInt();
-                    if (input >= 1 && input <= 5) {
-                        break;
-                    }else {
-                        System.out.println("Invalid input. Try again.");
-                    }
-                }else {
+    }
+
+    public static int getValidInput(Scanner scanner, String prompt) {
+        int input = 0;
+        while (true) {
+            System.out.print(prompt);
+            if (scanner.hasNextInt()) {
+                input = scanner.nextInt();
+                if (input >= 1 && input <= 5) {
+                    break;
+                } else {
                     System.out.println("Invalid input. Try again.");
-                    scanner.nextLine();
                 }
-
+            } else {
+                System.out.println("Invalid input. Try again.");
+                scanner.nextLine();
             }
-            return input;
+
         }
+        return input;
+    }
 
 }

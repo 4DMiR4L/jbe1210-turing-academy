@@ -32,19 +32,19 @@ public class NumberGameApp {
                 System.out.println("Please enter a number between 0 and 100.");
                 continue;
             }
-            enteredNumbers[UserGuess]=UserGuess;
+            enteredNumbers[UserGuess] = UserGuess;
             attempts++;
             if (UserGuess < numbers) {
                 System.out.println("it's small number");
             } else if (UserGuess > numbers)
                 System.out.println("it's large number");
             else {
-                System.out.println("righ number" +name+ "!");
+                System.out.println("righ number" + name + "!");
 
                 System.out.println("Your numbers");
 
-                for (int i = 0; i < attempts -1; i++) {
-                    for (int j = i+1; j < attempts; j++) {
+                for (int i = 0; i < attempts - 1; i++) {
+                    for (int j = i + 1; j < attempts; j++) {
                         if (enteredNumbers[i] < enteredNumbers[j]) {
                             int temp = enteredNumbers[i];
                             enteredNumbers[i] = enteredNumbers[j];
