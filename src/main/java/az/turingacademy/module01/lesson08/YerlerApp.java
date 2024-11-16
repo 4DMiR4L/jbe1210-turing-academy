@@ -19,14 +19,12 @@ public class YerlerApp {
             if (ad.trim().equals(""))
                 break;
 
-            boolean oturdu = false;
             int i = random.nextInt(2);
             int j = random.nextInt(3);
             int k = random.nextInt(7);
 
             if (adlar[i][j][k] == null) {
                 adlar[i][j][k] = ad;
-                oturdu = true;
             }
         }
         for (int i = 0; i < 2; i++) {
