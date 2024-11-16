@@ -55,7 +55,7 @@ public class ShootingSquareApp {
     }
 
     public static int getValidInput(Scanner scanner, String prompt) {
-        int input = 0;
+        int input;
         while (true) {
             System.out.print(prompt);
             if (scanner.hasNextInt()) {

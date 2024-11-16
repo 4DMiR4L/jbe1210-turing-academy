@@ -13,7 +13,6 @@ public class NumberGameApp {
         System.out.println("Enter the number between 1 and 100: ");
 
         int numbers = random.nextInt(101);
-        int TexminiEded = 0;
         System.out.println("Adını de");
         String name = scanner.nextLine();
 
