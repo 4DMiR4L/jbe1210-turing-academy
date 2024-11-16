@@ -19,7 +19,6 @@ public class YerlerApp {
             if (ad.trim().equals(""))
                 break;
 
-
             boolean oturdu = false;
             int i = random.nextInt(2);
             int j = random.nextInt(3);
