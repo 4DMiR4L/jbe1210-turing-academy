@@ -6,8 +6,6 @@ public class Yerler2_0App {
 
     public static void main(String[] args) {
         Random random = new Random();
-        boolean[] istifadeolunan = new boolean[23];
-
 
         String[] adlar = {"Rəvan Agayev", "Gülər Əbilova", "Yetər Nəbiyeva", "Mirzəyeva Dilbər",
                 "Ruslan Çərkəzov", "Sənubər Abbasova", "Fəxri Babayev", "Lalə Həmidova", "Günay İskəndərova",
@@ -16,6 +14,7 @@ public class Yerler2_0App {
                 "Rena Mehdiyeva", "ƏliMurad", "Seyran Xəlilzadə",
                 "Hüseynov Məhəmməd", "Pərvin Bədəlova", "Nicat Məcidov"};
         System.out.println("adlar ve yerler");
+        boolean[] istifadeolunan = new boolean[adlar.length];
 
         for (String ad : adlar) {
             int randomNumber;
