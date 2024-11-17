@@ -7,12 +7,13 @@ public class Yerler2_0App {
     public static void main(String[] args) {
         Random random = new Random();
 
-        String[] adlar = {"Rəvan Agayev", "Gülər Əbilova", "Yetər Nəbiyeva", "Mirzəyeva Dilbər",
-                "Ruslan Çərkəzov", "Sənubər Abbasova", "Fəxri Babayev", "Lalə Həmidova", "Günay İskəndərova",
-                "Ramina Səlimova", "Tural Nəzərov", "Rəvan Əliyev", "İbrahim Ələkbərov", "Ella Piriyeva",
+        String[] adlar = {"Rəvan Agayev", "Gülər Əbilova", "Yetər Nəbiyeva",
+                "Ruslan Çərkəzov", "Sənubər Abbasova", "Fəxri Babayev",
+                "Lalə Həmidova", "Günay İskəndərova","Mirzəyeva Dilbər",
+                "Ramina Səlimova", "Tural Nəzərov", "Rəvan Əliyev", "İbrahim Ələkbərov",
                 "Aynur Məmmədova", "Ömər Ələkbərov", "Famil Məmmədov",
                 "Rena Mehdiyeva", "ƏliMurad", "Seyran Xəlilzadə",
-                "Hüseynov Məhəmməd", "Pərvin Bədəlova", "Nicat Məcidov"};
+                "Hüseynov Məhəmməd", "Pərvin Bədəlova", "Nicat Məcidov","Ella Piriyeva",};
         System.out.println("adlar ve yerler");
         boolean[] istifadeolunan = new boolean[adlar.length];
 
