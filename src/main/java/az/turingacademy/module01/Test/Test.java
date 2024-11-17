@@ -24,9 +24,9 @@ public class Test {
                 break;
             }
 
-            boolean yerləşdi = false;
+            boolean yerlesdi = false;
 
-            while (!yerləşdi) {
+            while (!yerlesdi) {
                 // Təsadüfi indekslər yaradılır
                 int i = random.nextInt(2); // 0 və ya 1
                 int j = random.nextInt(3); // 0, 1, və ya 2
@@ -35,7 +35,7 @@ public class Test {
                 // Əgər seçilmiş mövqe boşdursa, ad yerləşdirilir
                 if (array[i][j][k] == null) {
                     array[i][j][k] = ad;
-                    yerləşdi = true;
+                    yerlesdi = true;
                 }
             }
         }

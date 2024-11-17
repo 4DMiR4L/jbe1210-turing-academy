@@ -24,7 +24,7 @@ public class BoxGameAppSehv {
             for (int i = 0; i < 3; i++) {
                 field[targetRow][targetCol + i] = 'x';
             }
-        }else  {
+        } else {
             for (int i = 0; i < 3; i++) {
                 field[targetRow + i][targetCol] = 'x';
             }
@@ -34,13 +34,13 @@ public class BoxGameAppSehv {
         boolean targetFound = false;
         while (!targetFound) {
             printField(field);
-            int fireRow = getValidInput(scanner, "Enter the row (1-5) to fire: ", 1, 5) - 1;
-            int fireCol = getValidInput(scanner, "Enter the column (1-5) to fire: ", 1, 5) - 1;
+            int fireRow = getValidInput(scanner, "Enter the row (1-5) to fire: ") - 1;
+            int fireCol = getValidInput(scanner, "Enter the column (1-5) to fire: ") - 1;
             if (field[fireRow][fireCol] == 'x') {
                 System.out.println("You fired!");
                 field[fireRow][fireCol] = '*';
                 targetFound = true;
-            }else {
+            } else {
                 if (field[fireRow][fireCol] == '-') {
                     field[fireRow][fireCol] = '*';
                     System.out.println("Miss! Try again.");
@@ -52,6 +52,7 @@ public class BoxGameAppSehv {
         System.out.println("YOu are won:");
         scanner.close();
     }
+
     private static void printField(char[][] field) {
         System.out.println("0 | 1 | 2 | 3 | 4 ");
         for (int i = 0; i < 5; i++) {
@@ -61,19 +62,20 @@ public class BoxGameAppSehv {
             System.out.println();
         }
     }
-    private static int getValidInput(Scanner scanner, String prompt, int min, int max) {
+
+    private static int getValidInput(Scanner scanner, String prompt) {
         int input;
         while (true) {
             System.out.print(prompt);
 
             if (scanner.hasNextInt()) {
                 input = scanner.nextInt();
-                if (input >= min && input <= max) {
+                if (input >= 1 && input <= 5) {
                     break;
-                }else {
+                } else {
                     System.out.println("Invalid input. Try again.");
                 }
-            }else {
+            } else {
                 System.out.println("Invalid input. Try again.");
                 scanner.next();
             }

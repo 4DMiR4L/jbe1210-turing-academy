@@ -31,10 +31,10 @@ public class WeekPlanApp {
             String input = sc.nextLine().trim().toLowerCase();
 
             boolean validDay = false;
-            for (int i = 0; i < schedule.length; i++) {
-                if (schedule[i][0].equalsIgnoreCase(input)) {
+            for (String[] strings : schedule) {
+                if (strings[0].equalsIgnoreCase(input)) {
                     validDay = true;
-                    System.out.println("Your tasks for " + schedule[i][0] + ": " + schedule[i][1]);
+                    System.out.println("Your tasks for " + strings[0] + ": " + strings[1]);
                     break;
                 }
             }
