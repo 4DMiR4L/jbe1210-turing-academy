@@ -1,6 +1,5 @@
 package az.turingacademy.module02.tasks01;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class task11 {

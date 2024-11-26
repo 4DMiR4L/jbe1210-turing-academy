@@ -9,10 +9,10 @@ public class taskH03 {
         Scanner scanner = new Scanner(System.in);
 
         int x = scanner.nextInt();
-
         String num = String.valueOf(x);
         StringBuilder palindrome = new StringBuilder(num).reverse();
         int num2 = Integer.parseInt(palindrome.toString());
+
         if (x == num2) {
             System.out.println("true");
         } else {

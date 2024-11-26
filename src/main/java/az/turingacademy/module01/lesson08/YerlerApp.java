@@ -16,7 +16,7 @@ public class YerlerApp {
         while (true) {
 
             String ad = scanner.nextLine();
-            if (ad.trim().equals(""))
+            if (ad.equals("1"))
                 break;
 
             int i = random.nextInt(2);
