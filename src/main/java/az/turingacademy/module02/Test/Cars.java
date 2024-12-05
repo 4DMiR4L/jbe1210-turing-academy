@@ -1,12 +1,12 @@
 package az.turingacademy.module02.Test;
 
-public class CarApp {
+public class Cars {
 
     private String model;
     private String color;
     private String engineType;
 
-    public CarApp(String model, String color, String engineType) {
+    public Cars(String model, String color, String engineType) {
         this.model = model;
         this.color = color;
         this.engineType = engineType;
@@ -38,7 +38,7 @@ public class CarApp {
 
     @Override
     public String toString() {
-        return "CarApp{" +
+        return "Cars{" +
                 "model='" + getModel() + '\'' +
                 ", color='" + getColor() + '\'' +
                 ", engineType='" + getEngineType() + '\'' +

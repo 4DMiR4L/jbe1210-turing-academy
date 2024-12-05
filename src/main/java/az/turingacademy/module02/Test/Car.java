@@ -1,6 +1,6 @@
 package az.turingacademy.module02.Test;
 
-public class Car extends CarApp {
+public class Car extends Cars {
     private int hp;
 
     public Car(String model, String color, String enginetype, int hp) {
