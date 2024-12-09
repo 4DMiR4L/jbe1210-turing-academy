@@ -39,9 +39,9 @@ public class Cars {
     @Override
     public String toString() {
         return "Cars{" +
-                "model='" + getModel() + '\'' +
-                ", color='" + getColor() + '\'' +
-                ", engineType='" + getEngineType() + '\'' +
+                "model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", engineType='" + engineType + '\'' +
                 '}';
     }
 }

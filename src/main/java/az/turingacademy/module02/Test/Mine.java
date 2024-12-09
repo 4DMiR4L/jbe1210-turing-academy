@@ -6,5 +6,8 @@ public class Mine {
 
         Car car =new Car("Mercedes" , "black","v8",600);
         System.out.println(car);
+
+        Moto moto = new Moto("S1000RR","black","Supercharged","Racing");
+        System.out.println(moto);
     }
 }
