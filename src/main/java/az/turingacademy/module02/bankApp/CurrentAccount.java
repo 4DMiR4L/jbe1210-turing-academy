@@ -18,6 +18,7 @@ public class CurrentAccount extends BankAccount {
             System.out.println("Withdrawal exceeds overdraft limit or invalid amount!");
         }
     }
+
     public void displayInfo() {
         super.displayInfo();  // Əsas sinifin məlumatlarını göstərir
         System.out.println("Overdraft Limit: " + overdraftlimit);
