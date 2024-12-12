@@ -5,8 +5,8 @@ public class SavingsAccount extends BankAccount {
     private double monthlyInterestRate;
     private int withdrawalLimit;
 
-    public SavingsAccount(String accountHolder, int accountNumber, double balance, double monthlyinterestRate, int withdrawalLimit) {
-        super(accountHolder, accountNumber, balance);
+    public SavingsAccount(String accountHolder ,double balance ,int accountNumber,  double monthlyinterestRate, int withdrawalLimit) {
+        super(accountHolder, balance, accountNumber);
         this.monthlyInterestRate = monthlyinterestRate;
         this.withdrawalLimit = 3;
     }

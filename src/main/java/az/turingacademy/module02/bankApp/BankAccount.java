@@ -4,13 +4,13 @@ import java.util.Objects;
 
 public class BankAccount {
     private String accountHolder;
-    private int accountNumber;
     private double balance;
+    private int accountNumber;
 
-    public BankAccount(String accountHolder, int accountNumber, double balance) {
+    public BankAccount(String accountHolder,double balance, int accountNumber) {
         this.accountHolder = accountHolder;
-        this.accountNumber = accountNumber;
         this.balance = balance;
+        this.accountNumber = accountNumber;
     }
 
     public String getAccountHolder() {
@@ -21,20 +21,20 @@ public class BankAccount {
         this.accountHolder = accountHolder;
     }
 
-    public int getAccountNumber() {
-        return accountNumber;
-    }
-
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
     public double getBalance() {
         return balance;
     }
 
     public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
     }
 
     public void deposit(double amount) {
