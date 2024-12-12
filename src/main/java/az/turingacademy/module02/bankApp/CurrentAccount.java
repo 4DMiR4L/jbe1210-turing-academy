@@ -20,7 +20,7 @@ public class CurrentAccount extends BankAccount {
     }
 
     public void displayInfo() {
-        super.displayInfo();  // Əsas sinifin məlumatlarını göstərir
+        super.displayInfo();
         System.out.println("Overdraft Limit: " + overdraftlimit);
     }
 }
