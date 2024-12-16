@@ -1,4 +1,4 @@
-package az.turingacademy.module02.Test;
+package az.turingacademy.module02.lesson16;
 
 public class Car extends Cars {
     private int hp;
