@@ -2,7 +2,7 @@ package az.turingacademy.module02.familyApp;
 
 import java.util.Arrays;
 
-public abstract class Pet extends Human {
+public abstract class Pet  {
 
     private String species;
     private String nickName;
