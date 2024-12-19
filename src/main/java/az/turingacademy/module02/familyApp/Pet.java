@@ -10,12 +10,14 @@ public abstract class Pet  {
     private int trickLevels;
     private String[] habits;
 
+    public static void pet(){}
+
     public static void eat(){
         System.out.println("I am eating");
     }
 
     public void respond(){
-        System.out.println("Hello, owner. I am" + this.nickName + "I miss you!" );
+        System.out.println("Hello, owner. I am" + nickName + "I miss you!" );
     }
 
     public static void foul(){
