@@ -45,4 +45,37 @@ public class Family {
         this.pet = pet;
     }
 
+    public void addChild(Human child){
+        Human[] newChildren = new Human[children.length + 1];
+        for (int i = 0; i < children.length; i++) {
+            newChildren[i] = children[i];
+        }
+        newChildren[children.length] = child;
+        children = newChildren;
+        child.setFamily(this);
+    }
+
+    public void deleteChild(Human child){
+        int indexToRemove = -1;
+        for (int i = 0; i < children.length; i++) {
+            if (children[i] == child) {
+                indexToRemove = i;
+                break;
+            }
+        }
+        if (indexToRemove == -1) {
+            System.out.println("Child not found in the list.");
+            return;
+        }
+
+        Human[] newChildren = new Human[children.length - 1];
+        for (int i = 0, j = 0; i < children.length; i++) {
+            if (i != indexToRemove) {
+                newChildren[j++] = children[i];
+            }
+        }
+
+        children = newChildren;
+        child.setFamily(null);
+    }
 }
