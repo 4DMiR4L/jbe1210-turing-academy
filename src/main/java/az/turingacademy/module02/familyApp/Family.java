@@ -54,7 +54,6 @@ public class Family {
         children = newChildren;
         child.setFamily(this);
     }
-
     public void deleteChild(Human child){
         int indexToRemove = -1;
         for (int i = 0; i < children.length; i++) {
