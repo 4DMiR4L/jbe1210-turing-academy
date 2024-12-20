@@ -2,7 +2,7 @@ package az.turingacademy.module02.familyApp;
 
 import java.util.Arrays;
 
-public abstract class Pet  {
+public abstract class Pet {
 
     private Species species;
     private String nickName;
@@ -10,17 +10,18 @@ public abstract class Pet  {
     private int trickLevels;
     private String[] habits;
 
-    public static void pet(){}
+    public static void pet() {
+    }
 
-    public static void eat(){
+    public static void eat() {
         System.out.println("I am eating");
     }
 
-    public void respond(){
-        System.out.println("Hello, owner. I am" + nickName + "I miss you!" );
+    public void respond() {
+        System.out.println("Hello, owner. I am" + nickName + "I miss you!");
     }
 
-    public static void foul(){
+    public static void foul() {
         System.out.println("‘I need to cover it up");
     }
 

@@ -24,7 +24,7 @@ public enum Species {
         return numberOfLegs;
     }
 
-    public boolean  HasFur() {
+    public boolean HasFur() {
         return hasFur;
     }
 }
