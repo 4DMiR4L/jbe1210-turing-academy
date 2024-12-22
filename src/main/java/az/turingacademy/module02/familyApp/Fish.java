@@ -11,6 +11,7 @@ public class Fish extends Pet {
     public void respond() {
         System.out.println("The fish doesn't respond");
     }
+
     @Override
     public void eat() {
         System.out.println();
