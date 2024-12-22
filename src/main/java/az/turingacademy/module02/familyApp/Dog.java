@@ -16,5 +16,9 @@ public class Dog extends Pet implements Foul {
             System.out.println("The dog makes a mess");
 
         }
+    @Override
+    public void eat() {
+        System.out.println();
+    }
     }
 
