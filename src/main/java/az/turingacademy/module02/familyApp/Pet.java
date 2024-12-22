@@ -13,7 +13,7 @@ public abstract class Pet {
     public static void pet() {
     }
 
-    public static void eat() {
+    public void eat() {
         System.out.println("I am eating");
     }
 
@@ -21,9 +21,6 @@ public abstract class Pet {
         System.out.println("Hello, owner. I am" + nickName + "I miss you!");
     }
 
-    public static void foul() {
-        System.out.println("‘I need to cover it up");
-    }
 
     public Pet(Species species, String nickName, int age, int trickLevels, String[] habits) {
 
@@ -84,7 +81,5 @@ public abstract class Pet {
                 ", habits=" + Arrays.toString(habits) +
                 '}';
     }
-
-    
 }
 

@@ -1,7 +1,6 @@
 package az.turingacademy.module02.familyApp;
 
 public class Family {
-
     private Human mother;
     private Human father;
     private Human[] children;
