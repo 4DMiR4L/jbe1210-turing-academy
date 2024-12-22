@@ -17,6 +17,14 @@ public class Human {
         System.out.println("hello," + pet.getNickName());
     }
 
+    public boolean feedPet(boolean isHungry) {
+        if (isHungry) {
+            System.out.println("Hm... I will feed " + pet.getNickName());
+            pet.eat(); // Pet-in yemək metodunu çağırır
+        }
+        return true;
+    }
+
     public void describePet() {
         String slyness = pet.getTrickLevels() > 50 ? "very sly" : "almost not sly";
         System.out.println("I have an" + pet.getNickName() + "is" + pet.getAge() + " years old" + "he is" + slyness);

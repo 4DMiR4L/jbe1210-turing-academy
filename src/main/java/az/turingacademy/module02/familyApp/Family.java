@@ -1,5 +1,7 @@
 package az.turingacademy.module02.familyApp;
 
+import java.util.Arrays;
+
 public class Family {
     private Human mother;
     private Human father;
@@ -78,5 +80,15 @@ public class Family {
     }
     public int countFamily() {
         return 2 + children.length;
+    }
+
+    @Override
+    public String toString() {
+        return "Family{" +
+                "mother=" + mother +
+                ", father=" + father +
+                ", children=" + Arrays.toString(children) +
+                ", pet=" + pet +
+                '}';
     }
 }
