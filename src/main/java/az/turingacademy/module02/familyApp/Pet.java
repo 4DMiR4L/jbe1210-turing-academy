@@ -2,29 +2,30 @@ package az.turingacademy.module02.familyApp;
 
 import java.util.Arrays;
 
-public abstract class Pet  {
+public abstract class Pet {
 
-    private String species;
+    private Species species;
     private String nickName;
     private int age;
     private int trickLevels;
     private String[] habits;
 
-    public static void pet(){}
+    public static void pet() {
+    }
 
-    public static void eat(){
+    public static void eat() {
         System.out.println("I am eating");
     }
 
-    public void respond(){
-        System.out.println("Hello, owner. I am" + nickName + "I miss you!" );
+    public void respond() {
+        System.out.println("Hello, owner. I am" + nickName + "I miss you!");
     }
 
-    public static void foul(){
+    public static void foul() {
         System.out.println("‘I need to cover it up");
     }
 
-    public Pet(String species, String nickName, int age, int trickLevels, String[] habits) {
+    public Pet(Species species, String nickName, int age, int trickLevels, String[] habits) {
 
         this.species = species;
         this.nickName = nickName;
@@ -33,11 +34,11 @@ public abstract class Pet  {
         this.habits = habits;
     }
 
-    public String getSpecies() {
+    public Species getSpecies() {
         return species;
     }
 
-    public void setSpecies(String species) {
+    public void setSpecies(Species species) {
         this.species = species;
     }
 

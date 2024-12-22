@@ -7,7 +7,7 @@ public class Family {
     private Human[] children;
     private Pet pet;
 
-    public Family(Human mother, Human father){
+    public Family(Human mother, Human father) {
         this.mother = mother;
         this.father = father;
         this.children = new Human[0];
@@ -45,7 +45,7 @@ public class Family {
         this.pet = pet;
     }
 
-    public void addChild(Human child){
+    public void addChild(Human child) {
         Human[] newChildren = new Human[children.length + 1];
         for (int i = 0; i < children.length; i++) {
             newChildren[i] = children[i];
@@ -55,7 +55,7 @@ public class Family {
         child.setFamily(this);
     }
 
-    public void deleteChild(Human child){
+    public void deleteChild(Human child) {
         int indexToRemove = -1;
         for (int i = 0; i < children.length; i++) {
             if (children[i] == child) {

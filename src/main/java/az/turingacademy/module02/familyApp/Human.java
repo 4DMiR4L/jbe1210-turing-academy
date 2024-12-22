@@ -10,7 +10,7 @@ public class Human {
     private int IQ;
     private Pet pet;
     private Family family;
-//    private Mother mother;
+    //    private Mother mother;
 //    private Father father;
     private String[][] shedule;
 
