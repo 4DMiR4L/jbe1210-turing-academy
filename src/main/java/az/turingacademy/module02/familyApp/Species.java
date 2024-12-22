@@ -3,7 +3,7 @@ package az.turingacademy.module02.familyApp;
 public enum Species {
     DOG(true, 4, true),
     CAT(false, 4, true),
-    PARROT(true, 2, false),
+    DomesticCat(false, 2, true),
     FISH(false, 0, false);
 
     private final boolean canFly;

@@ -74,8 +74,10 @@ public class Family {
                 newChildren[j++] = children[i];
             }
         }
-
         children = newChildren;
         child.setFamily(null);
+    }
+    public int countFamily() {
+        return 2 + children.length;
     }
 }
