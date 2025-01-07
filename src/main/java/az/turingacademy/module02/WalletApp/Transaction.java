@@ -9,8 +9,6 @@ public class Transaction {
     private Integer sourceWalletId;
     private Integer destinationWalletId;
 
-
-
     public Transaction(String type, double amount, LocalDateTime date, Integer sourceWalletId, Integer destinationWalletId) {
         this.type = type;
         this.amount = amount;

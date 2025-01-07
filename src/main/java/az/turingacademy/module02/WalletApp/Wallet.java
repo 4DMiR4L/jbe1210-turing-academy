@@ -22,6 +22,10 @@ public class Wallet {
         }
     }
 
+    public void showBalance() {
+        System.out.println("balance: " + balance);
+    }
+
     public Wallet(int walletId, long userId, double balance) {
         this.walletId = walletId;
         this.userId = userId;
