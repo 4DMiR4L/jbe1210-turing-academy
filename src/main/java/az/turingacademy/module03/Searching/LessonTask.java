@@ -1,6 +1,7 @@
 package az.turingacademy.module03.Searching;
 
 import java.util.*;
+import java.util.stream.IntStream;
 
 public class LessonTask {
     public static void main(String[] args) {
@@ -39,5 +40,6 @@ public class LessonTask {
         stack.addAll(queue);
         System.out.println(stack);
 
+        IntStream.range(0, 100).filter(Integer -> Integer % 3 ==0 && Integer%5==0 ).map(Integer -> Integer * Integer).forEach(System.out::println);
     }
 }

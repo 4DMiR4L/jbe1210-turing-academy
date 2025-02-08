@@ -1,4 +1,4 @@
-package az.turingacademy.module03.Lesson23;
+package az.turingacademy.module03.lesson23;
 
 public class Person {
     private long id;
