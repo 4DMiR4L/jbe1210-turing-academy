@@ -1,4 +1,4 @@
-package az.turingacademy.module03.Searching;
+package az.turingacademy.module03.learning;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;

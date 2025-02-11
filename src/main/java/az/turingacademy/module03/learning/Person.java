@@ -1,4 +1,4 @@
-package az.turingacademy.module03.Searching;
+package az.turingacademy.module03.learning;
 
 public class Person {
     private String name;

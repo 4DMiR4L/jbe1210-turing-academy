@@ -1,5 +1,7 @@
 package az.turingacademy.module03.Searching;
 
+import az.turingacademy.module03.learning.Person;
+
 import java.util.*;
 
 public class Searching {
