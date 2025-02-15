@@ -1,7 +1,7 @@
 package az.turingacademy.module03.Searching;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class StudentApp {
     public static void main(String[] args) {
@@ -12,5 +12,8 @@ public class StudentApp {
         map.put(new Student(3, "Carl"), "C");
 
         map.forEach((k, v) -> System.out.println(k + " : " + v));
+
+
+
     }
 }
