@@ -25,6 +25,7 @@ public class WriteToFile {
 
         }
 
+
         try {
             BufferedReader br = new BufferedReader(new FileReader(path + "\\" + fileName));
             String line;
