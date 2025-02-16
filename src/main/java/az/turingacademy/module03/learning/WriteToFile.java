@@ -12,7 +12,7 @@ public class WriteToFile {
 
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(path + "\\" + fileName));
-            bw.write("Salam yetqa");
+            bw.write("Salam ");
             for (String name : names) {
                 bw.write("\n" + name);
             }
@@ -21,6 +21,8 @@ public class WriteToFile {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+
+
         }
 
         try {
