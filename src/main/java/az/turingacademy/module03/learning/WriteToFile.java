@@ -1,6 +1,7 @@
 package az.turingacademy.module03.learning;
 
 import java.io.*;
+import java.util.Iterator;
 
 public class WriteToFile {
     public static void main(String[] args) throws IOException {
@@ -24,6 +25,7 @@ public class WriteToFile {
 
 
         }
+
 
 
         try {
