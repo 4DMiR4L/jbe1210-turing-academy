@@ -6,7 +6,13 @@ public class SyncExample {
         Thread t1 = new Thread(() ->{
             for (int i = 0; i < 10; i++) counter.increment();
         });
+        try {
 
+
+            t1.sleep(2000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
         Thread t2 = new Thread(() ->{
             for (int i = 0; i < 100; i++) counter.increment();
         });
