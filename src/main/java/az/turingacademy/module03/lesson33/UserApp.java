@@ -11,6 +11,5 @@ public class UserApp {
         userController.save(userEntity1);
         userController.save(userEntity2);
         System.out.println(userController.findAll());
-
     }
 }

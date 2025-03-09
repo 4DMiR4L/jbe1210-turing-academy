@@ -38,7 +38,6 @@ public class PostgresUserDao implements UserDao {
                 UserEntity userEntity = new UserEntity(id, username, password);
                 userEntities.add(userEntity);
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
