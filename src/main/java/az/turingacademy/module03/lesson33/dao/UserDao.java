@@ -8,5 +8,5 @@ public interface UserDao {
 
     void save(UserEntity userEntity);
 
-    public List<UserEntity> findAll();
+    List<UserEntity> findAll();
 }
